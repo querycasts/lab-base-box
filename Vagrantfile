@@ -41,10 +41,10 @@ Vagrant::Config.run do |config|
       },
 
       rbenv: {
-        rubies: ["1.9.3-p374"],
-        global: "1.9.3-p374",
+        rubies: ["1.9.3-p385"],
+        global: "1.9.3-p385",
         gems: {
-          "1.9.3-p374" => [{
+          "1.9.3-p385" => [{
             name: "bundler"
           }]
         }
