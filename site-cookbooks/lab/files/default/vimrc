@@ -1,0 +1,13 @@
+set nocompatible
+syntax on
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+filetype plugin indent on
+set number
+set ruler
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+set hidden
+autocmd BufRead *.md set filetype=md
+autocmd BufNewFile *.md set filetype=md

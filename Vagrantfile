@@ -13,10 +13,10 @@ Vagrant::Config.run do |config|
 
   config.ssh.forward_agent = true
 
-  config.package.name = "querycasts-lab-0.0.0"
+  config.package.name = "querycasts-lab-0.0.1"
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "cookbooks"
+    chef.cookbooks_path = ["site-cookbooks", "cookbooks"]
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
 
@@ -35,6 +35,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe("nginx::source")
     chef.add_recipe("nodejs")
     chef.add_recipe("phantomjs")
+    chef.add_recipe("lab")
 
     chef.json = {
       nodejs: {
