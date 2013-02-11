@@ -53,6 +53,7 @@ Vagrant::Config.run do |config|
       },
 
       postgresql: {
+        enable_pitti_ppa: true,
         password: {
           postgres: "querycasts"
         }
