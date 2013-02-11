@@ -13,6 +13,8 @@ Vagrant::Config.run do |config|
 
   config.ssh.forward_agent = true
 
+  config.package.name = "querycasts-lab-0.0.0"
+
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
     chef.roles_path = "roles"
