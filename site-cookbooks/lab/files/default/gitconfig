@@ -10,6 +10,8 @@
   editor = vim
   excludesfile = ~/.gitignore
   autocrlf = input
+[color]
+  ui = true
 [branch]
   autosetuprebase = always
 [push]
