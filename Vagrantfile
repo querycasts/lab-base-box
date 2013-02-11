@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.host_name = "classroom"
+  config.vm.host_name = "lab"
 
   config.vm.box = "opscode_ubuntu-12.04"
 
