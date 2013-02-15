@@ -39,8 +39,8 @@ Vagrant::Config.run do |config|
 
     chef.json = {
       nodejs: {
-        version: "0.8.19",
-        checksum: "f4fdbb642055be65579e11cb52c823573efabcf2",
+        version: "0.8.20",
+        checksum: "b780f58f0e3bc43d2380d4a935f2b45350783b37",
       },
 
       rbenv: {
