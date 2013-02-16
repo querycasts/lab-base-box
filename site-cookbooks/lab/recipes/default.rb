@@ -27,3 +27,7 @@ cookbook_file "/home/vagrant/.vimrc" do
   owner "vagrant"
   group "vagrant"
 end
+
+execute "clean-up-bento-scripts" do
+  command "rm /home/vagrant/*.sh"
+end
