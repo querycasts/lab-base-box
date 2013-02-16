@@ -13,7 +13,7 @@ Vagrant::Config.run do |config|
 
   config.ssh.forward_agent = true
 
-  config.package.name = "querycasts-lab-0.0.1"
+  config.package.name = "querycasts-lab-0.0.1.pre1"
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["site-cookbooks", "cookbooks"]
