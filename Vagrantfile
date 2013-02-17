@@ -27,20 +27,11 @@ Vagrant::Config.run do |config|
     chef.add_recipe("git")
     chef.add_recipe("ruby_build")
     chef.add_recipe("rbenv::system")
-    chef.add_recipe("postgresql::server")
-    chef.add_recipe("mongodb::10gen_repo")
-    chef.add_recipe("memcached")
-    chef.add_recipe("redisio::install")
-    chef.add_recipe("redisio::enable")
-    chef.add_recipe("nginx::source")
-    chef.add_recipe("nodejs")
-    chef.add_recipe("phantomjs")
     chef.add_recipe("lab")
 
     chef.json = {
-      nodejs: {
-        version: "0.8.20",
-        checksum: "b780f58f0e3bc43d2380d4a935f2b45350783b37",
+      nginx: {
+        default_site_enabled: false
       },
 
       rbenv: {
@@ -50,13 +41,6 @@ Vagrant::Config.run do |config|
           "1.9.3-p385" => [{
             name: "bundler"
           }]
-        }
-      },
-
-      postgresql: {
-        enable_pitti_ppa: true,
-        password: {
-          postgres: "querycasts"
         }
       }
     }
