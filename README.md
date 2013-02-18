@@ -30,6 +30,11 @@ Edit the generated definition files as necessary. Then you're ready to build the
 
 ```
 $ bundle exec veewee vbox build BOX_NAME
+```
+
+This will take a few minutes. Once it's finished, you will see a message telling you how to SSH into the box. Connect to it using the password "vagrant" and remove and shell scripts in the home directory, then exit the connection. To export the box and finish the process:
+
+```
 $ bundle exec veewee vbox validate [NAME]
 $ vagrant basebox export BOX_NAME
 $ bundle exec veewee vbox destroy BOX_NAME
