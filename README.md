@@ -2,6 +2,14 @@
 
 This is a [Vagrant](http://www.vagrantup.com/) base box used for a development environment for students of [Querycasts](http://www.querycasts.com/).
 
+## VM details
+
+* Ubuntu 12.04.2 LTS 64-bit
+* 40 GB HD
+* 384 MB RAM
+* Ruby 1.9.3-p385
+* Chef and Puppet via RubyGems
+
 ## Installation
 
 ```
