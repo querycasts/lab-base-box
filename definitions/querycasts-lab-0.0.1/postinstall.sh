@@ -33,11 +33,11 @@ RUBY_VERSION=1.9.3-p385
 wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-$RUBY_VERSION.tar.gz
 tar xvzf ruby-$RUBY_VERSION.tar.gz
 cd ruby-$RUBY_VERSION
-./configure --prefix=/opt/ruby
+./configure --prefix=/opt/ruby --disable-install-doc
 make
 make install
 /opt/ruby/bin/gem update --system
-/opt/ruby/bin/gem update
+/opt/ruby/bin/gem update --no-rdoc --no-ri
 /opt/ruby/bin/gem cleanup
 /opt/ruby/bin/gem install chef puppet --no-rdoc --no-ri
 cd ..
